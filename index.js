@@ -140,7 +140,6 @@ for (let i = 1; i < finances.length; i++) {
     }
     totalProfit = totalProfit + 1 * financeAmount;
     previousMonth = financeAmount;
- 
 }
 console.log("Total Months: " + finances.length);
 totalProfitText = CommaFunction(totalProfit );
@@ -152,6 +151,3 @@ maxProfitText = CommaFunction(maxProfit);
 console.log("Greatest Increase in Profits: " + maxMonth + " $" + maxProfitText);
 maxLossText = CommaFunction(maxLoss);
 console.log("Greatest Decrease in Profits: " + lossMonth + " $" + maxLossText);
-
-console.log("END OF REPORT");
-// System.out.println("End of Program");
