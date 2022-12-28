@@ -86,8 +86,8 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-  
-function myFunction(p) {
+
+function CommaFunction(p) {
     pA = Math.abs(p);
     if ( p < 0 ) {
         NewText = "-";
@@ -143,13 +143,15 @@ for (let i = 1; i < finances.length; i++) {
  
 }
 console.log("Total Months: " + finances.length);
-totalProfitText = myFunction (totalProfit );
+totalProfitText = CommaFunction(totalProfit );
 console.log("Total: $" + totalProfitText);
-
 AveChange = ( AveChange / (finances.length-1));
 AveChange = roundTo (AveChange);
 console.log("Average Change: $" + AveChange);
-maxProfitText = myFunction(maxProfit);
+maxProfitText = CommaFunction(maxProfit);
 console.log("Greatest Increase in Profits: " + maxMonth + " $" + maxProfitText);
-maxLossText = myFunction(maxLoss);
+maxLossText = CommaFunction(maxLoss);
 console.log("Greatest Decrease in Profits: " + lossMonth + " $" + maxLossText);
+
+console.log("END OF REPORT");
+// System.out.println("End of Program");
